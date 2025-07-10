@@ -11,9 +11,9 @@ spring:
     name: PATIENT-SERVICE
   ########### Database Config ############
   datasource:
-    url: jdbc:h2:file:./database/patient_db
-    driverClasName: org.h2.Driver
-    username: root
+    url: jdbc:h2:mem:patient_db
+    driverClassName: org.h2.Driver
+    username: sa
     password:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
